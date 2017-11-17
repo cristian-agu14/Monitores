@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="co.edu.uniquindio.android.electiva.monitorsara.DescripcionCita">
+
+
+    <TextView
+        android:id="@+id/encabezado_datos_cita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/Datos_Cita"
+        android:textSize="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorCielo"/>
+
+    <TextView
+        android:id="@+id/nombre_estudiante_encabezado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="47dp"
+        android:text="@string/nombre_estudiante"
+        android:textSize="28dp"
+        android:layout_below="@+id/encabezado_datos_cita"
+        android:layout_alignStart="@+id/encabezado_datos_cita" />
+
+    <TextView
+        android:id="@+id/nombre_estudiante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:text="TextView"
+        android:layout_marginStart="30dp"
+        android:layout_below="@+id/nombre_estudiante_encabezado"
+        android:layout_alignStart="@+id/nombre_estudiante_encabezado" />
+
+    <TextView
+        android:id="@+id/Semestre_encabezado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/encabezado_semestre"
+        android:textSize="28dp"
+        android:layout_alignBottom="@+id/SemestreTextView"
+        android:layout_alignStart="@+id/nombre_estudiante_encabezado" />
+
+    <TextView
+        android:id="@+id/SemestreTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_marginTop="39dp"
+        android:layout_below="@+id/nombre_estudiante"
+        android:layout_alignEnd="@+id/encabezado_datos_cita" />
+
+    <TextView
+        android:id="@+id/linea_asesoria_encabesado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/Semestre_encabezado"
+        android:layout_below="@+id/Semestre_encabezado"
+        android:layout_marginTop="45dp"
+        android:text="@string/ancabezado_linea_asesoria"
+        android:textSize="28dp"
+        />
+
+    <TextView
+        android:id="@+id/lineaAsesoriaTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/nombre_estudiante"
+        android:layout_below="@+id/linea_asesoria_encabesado"
+        android:layout_marginTop="17dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/encabezadoFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/linea_asesoria_encabesado"
+        android:layout_below="@+id/lineaAsesoriaTextView"
+        android:layout_marginTop="34dp"
+        android:text="@string/ancabezado_fecha"
+        android:textSize="28dp"/>
+
+    <TextView
+        android:id="@+id/FechaTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_alignBottom="@+id/encabezadoFecha"
+        android:layout_toEndOf="@+id/lineaAsesoriaTextView" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/nombre_estudiante_encabezado"
+        android:layout_marginEnd="25dp"
+        android:layout_toStartOf="@+id/encabezado_datos_cita"
+        app:srcCompat="@drawable/descripcion" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/persona"
+        android:layout_alignBottom="@+id/nombre_estudiante_encabezado"
+        android:layout_alignStart="@+id/imageView3" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linea_asesoria_encabesado"
+        android:layout_alignStart="@+id/imageView4"
+        app:srcCompat="@drawable/semestre" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imageView8"
+        android:layout_alignTop="@+id/linea_asesoria_encabesado"
+        app:srcCompat="@drawable/linea_asesoria" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/encabezadoFecha"
+        android:layout_alignEnd="@+id/imageView9"
+        app:srcCompat="@drawable/fecha" />
+
+    <ImageButton
+        android:id="@+id/imageButtonAceptar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/imageView10"
+        android:layout_marginBottom="11dp"
+        android:layout_marginStart="13dp"
+        app:srcCompat="@drawable/ok"
+        android:layout_toStartOf="@+id/lineaAsesoriaTextView"
+        android:background="@color/colorBlanco"/>
+
+    <ImageButton
+        android:id="@+id/imageButtonCancelar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/eliminar"
+        android:backgroundTint="@color/colorBlanco"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/linea_asesoria_encabesado" />
+
+
+</RelativeLayout>

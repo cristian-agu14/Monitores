@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Monitor SARA</string>
+    <string name="user_name">Usuario</string>
+    <string name="user_pass">Contraseña</string>
+    <string name="ingresar_login">INGRESAR</string>
+    <string name="variable"></string>
+    <string name="Cita">Cita</string>
+    <string name="Datos_Cita">Datos de la Cita</string>
+    <string name="nombre_estudiante">Nombre del Estudiante: </string>
+    <string name="encabezado_semestre">Semestre: </string>
+    <string name="ancabezado_linea_asesoria">Linea de asesoria:</string>
+    <string name="ancabezado_fecha">Fecha:</string>
+    <string name="fecha_de_muestra">Fecha xx xx xx</string>
+    <string name="numeral">#</string>
+    <string name="Mensaje_dialogo">¿Esta seguro que quiere CANCELAR la cita? si la cancela NO podrá agregarla de nuevo</string>
+    <string name="no">NO</string>
+    <string name="si">SI</string>
+    <string name="titulo_de_mensaje_confirmacion">Atencion!</string>
+
+</resources>
